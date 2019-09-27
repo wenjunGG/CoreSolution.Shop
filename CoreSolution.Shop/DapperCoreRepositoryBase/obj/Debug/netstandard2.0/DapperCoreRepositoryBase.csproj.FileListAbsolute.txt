@@ -1,0 +1,14 @@
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\DapperCoreRepositoryBase\bin\Debug\netstandard2.0\DapperCoreRepositoryBase.deps.json
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\DapperCoreRepositoryBase\bin\Debug\netstandard2.0\DapperCoreRepositoryBase.dll
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\DapperCoreRepositoryBase\obj\Debug\netstandard2.0\DapperCoreRepositoryBase.csproj.CoreCompileInputs.cache
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\DapperCoreRepositoryBase\obj\Debug\netstandard2.0\DapperCoreRepositoryBase.AssemblyInfoInputs.cache
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\DapperCoreRepositoryBase\obj\Debug\netstandard2.0\DapperCoreRepositoryBase.AssemblyInfo.cs
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\DapperCoreRepositoryBase\obj\Debug\netstandard2.0\DapperCoreRepositoryBase.csprojAssemblyReference.cache
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\DapperCoreRepositoryBase\bin\Debug\netstandard2.0\DapperCoreRepositoryBase.pdb
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\DapperCoreRepositoryBase\bin\Debug\netstandard2.0\CoreSolution.Dapper.Extension.dll
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\DapperCoreRepositoryBase\bin\Debug\netstandard2.0\CoreSolution.Dapper.Extension.MsSql.dll
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\DapperCoreRepositoryBase\bin\Debug\netstandard2.0\CoreSolution.Dapper.Extension.MsSql.pdb
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\DapperCoreRepositoryBase\bin\Debug\netstandard2.0\CoreSolution.Dapper.Extension.pdb
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\DapperCoreRepositoryBase\obj\Debug\netstandard2.0\DapperCoreRepositoryBase.csproj.CopyComplete
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\DapperCoreRepositoryBase\obj\Debug\netstandard2.0\DapperCoreRepositoryBase.dll
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\DapperCoreRepositoryBase\obj\Debug\netstandard2.0\DapperCoreRepositoryBase.pdb

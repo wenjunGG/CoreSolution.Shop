@@ -1,0 +1,16 @@
+F:\前端\1号店框架\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.UEditor.Core\bin\Debug\netstandard2.0\CoreSolution.UEditor.Core.deps.json
+F:\前端\1号店框架\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.UEditor.Core\bin\Debug\netstandard2.0\CoreSolution.UEditor.Core.dll
+F:\前端\1号店框架\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.UEditor.Core\obj\Debug\netstandard2.0\CoreSolution.UEditor.Core.csproj.CoreCompileInputs.cache
+F:\前端\1号店框架\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.UEditor.Core\obj\Debug\netstandard2.0\CoreSolution.UEditor.Core.AssemblyInfoInputs.cache
+F:\前端\1号店框架\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.UEditor.Core\obj\Debug\netstandard2.0\CoreSolution.UEditor.Core.AssemblyInfo.cs
+F:\前端\1号店框架\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.UEditor.Core\bin\Debug\netstandard2.0\CoreSolution.UEditor.Core.pdb
+F:\前端\1号店框架\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.UEditor.Core\obj\Debug\netstandard2.0\CoreSolution.UEditor.Core.dll
+F:\前端\1号店框架\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.UEditor.Core\obj\Debug\netstandard2.0\CoreSolution.UEditor.Core.pdb
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.UEditor.Core\bin\Debug\netstandard2.0\CoreSolution.UEditor.Core.deps.json
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.UEditor.Core\bin\Debug\netstandard2.0\CoreSolution.UEditor.Core.dll
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.UEditor.Core\bin\Debug\netstandard2.0\CoreSolution.UEditor.Core.pdb
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.UEditor.Core\obj\Debug\netstandard2.0\CoreSolution.UEditor.Core.csproj.CoreCompileInputs.cache
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.UEditor.Core\obj\Debug\netstandard2.0\CoreSolution.UEditor.Core.AssemblyInfoInputs.cache
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.UEditor.Core\obj\Debug\netstandard2.0\CoreSolution.UEditor.Core.AssemblyInfo.cs
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.UEditor.Core\obj\Debug\netstandard2.0\CoreSolution.UEditor.Core.dll
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.UEditor.Core\obj\Debug\netstandard2.0\CoreSolution.UEditor.Core.pdb

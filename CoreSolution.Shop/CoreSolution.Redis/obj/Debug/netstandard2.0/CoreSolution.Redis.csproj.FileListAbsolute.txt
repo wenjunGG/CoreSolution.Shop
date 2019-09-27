@@ -1,0 +1,12 @@
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Redis\bin\Debug\netstandard2.0\CoreSolution.Redis.deps.json
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Redis\bin\Debug\netstandard2.0\CoreSolution.Redis.dll
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Redis\bin\Debug\netstandard2.0\CoreSolution.Redis.pdb
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Redis\bin\Debug\netstandard2.0\CoreSolution.Tools.dll
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Redis\bin\Debug\netstandard2.0\CoreSolution.Tools.pdb
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Redis\obj\Debug\netstandard2.0\CoreSolution.Redis.csprojAssemblyReference.cache
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Redis\obj\Debug\netstandard2.0\CoreSolution.Redis.csproj.CoreCompileInputs.cache
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Redis\obj\Debug\netstandard2.0\CoreSolution.Redis.AssemblyInfoInputs.cache
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Redis\obj\Debug\netstandard2.0\CoreSolution.Redis.AssemblyInfo.cs
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Redis\obj\Debug\netstandard2.0\CoreSolution.Redis.csproj.CopyComplete
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Redis\obj\Debug\netstandard2.0\CoreSolution.Redis.dll
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Redis\obj\Debug\netstandard2.0\CoreSolution.Redis.pdb

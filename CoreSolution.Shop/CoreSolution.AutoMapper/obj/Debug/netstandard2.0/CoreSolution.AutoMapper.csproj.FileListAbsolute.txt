@@ -1,0 +1,14 @@
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.AutoMapper\bin\Debug\netstandard2.0\CoreSolution.AutoMapper.deps.json
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.AutoMapper\bin\Debug\netstandard2.0\CoreSolution.AutoMapper.dll
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.AutoMapper\obj\Debug\netstandard2.0\CoreSolution.AutoMapper.csprojAssemblyReference.cache
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.AutoMapper\obj\Debug\netstandard2.0\CoreSolution.AutoMapper.csproj.CoreCompileInputs.cache
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.AutoMapper\obj\Debug\netstandard2.0\CoreSolution.AutoMapper.AssemblyInfoInputs.cache
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.AutoMapper\obj\Debug\netstandard2.0\CoreSolution.AutoMapper.AssemblyInfo.cs
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.AutoMapper\bin\Debug\netstandard2.0\CoreSolution.AutoMapper.pdb
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.AutoMapper\obj\Debug\netstandard2.0\CoreSolution.AutoMapper.dll
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.AutoMapper\obj\Debug\netstandard2.0\CoreSolution.AutoMapper.pdb
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.AutoMapper\bin\Debug\netstandard2.0\CoreSolution.Domain.dll
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.AutoMapper\bin\Debug\netstandard2.0\CoreSolution.Dto.dll
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.AutoMapper\bin\Debug\netstandard2.0\CoreSolution.Domain.pdb
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.AutoMapper\bin\Debug\netstandard2.0\CoreSolution.Dto.pdb
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.AutoMapper\obj\Debug\netstandard2.0\CoreSolution.AutoMapper.csproj.CopyComplete

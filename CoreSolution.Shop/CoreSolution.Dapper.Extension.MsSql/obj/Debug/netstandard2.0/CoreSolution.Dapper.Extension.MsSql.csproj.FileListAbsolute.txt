@@ -1,0 +1,12 @@
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Dapper.Extension.MsSql\obj\Debug\netstandard2.0\CoreSolution.Dapper.Extension.MsSql.csprojAssemblyReference.cache
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Dapper.Extension.MsSql\obj\Debug\netstandard2.0\CoreSolution.Dapper.Extension.MsSql.csproj.CoreCompileInputs.cache
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Dapper.Extension.MsSql\obj\Debug\netstandard2.0\CoreSolution.Dapper.Extension.MsSql.AssemblyInfoInputs.cache
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Dapper.Extension.MsSql\obj\Debug\netstandard2.0\CoreSolution.Dapper.Extension.MsSql.AssemblyInfo.cs
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Dapper.Extension.MsSql\bin\Debug\netstandard2.0\CoreSolution.Dapper.Extension.MsSql.deps.json
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Dapper.Extension.MsSql\bin\Debug\netstandard2.0\CoreSolution.Dapper.Extension.MsSql.dll
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Dapper.Extension.MsSql\bin\Debug\netstandard2.0\CoreSolution.Dapper.Extension.dll
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Dapper.Extension.MsSql\bin\Debug\netstandard2.0\CoreSolution.Dapper.Extension.pdb
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Dapper.Extension.MsSql\obj\Debug\netstandard2.0\CoreSolution.Dapper.Extension.MsSql.csproj.CopyComplete
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Dapper.Extension.MsSql\bin\Debug\netstandard2.0\CoreSolution.Dapper.Extension.MsSql.pdb
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Dapper.Extension.MsSql\obj\Debug\netstandard2.0\CoreSolution.Dapper.Extension.MsSql.dll
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Dapper.Extension.MsSql\obj\Debug\netstandard2.0\CoreSolution.Dapper.Extension.MsSql.pdb

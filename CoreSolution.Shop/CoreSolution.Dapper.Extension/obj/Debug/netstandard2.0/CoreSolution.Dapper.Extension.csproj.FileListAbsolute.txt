@@ -1,0 +1,8 @@
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Dapper.Extension\obj\Debug\netstandard2.0\CoreSolution.Dapper.Extension.csproj.CoreCompileInputs.cache
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Dapper.Extension\obj\Debug\netstandard2.0\CoreSolution.Dapper.Extension.AssemblyInfoInputs.cache
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Dapper.Extension\obj\Debug\netstandard2.0\CoreSolution.Dapper.Extension.AssemblyInfo.cs
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Dapper.Extension\bin\Debug\netstandard2.0\CoreSolution.Dapper.Extension.deps.json
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Dapper.Extension\bin\Debug\netstandard2.0\CoreSolution.Dapper.Extension.dll
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Dapper.Extension\bin\Debug\netstandard2.0\CoreSolution.Dapper.Extension.pdb
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Dapper.Extension\obj\Debug\netstandard2.0\CoreSolution.Dapper.Extension.dll
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Dapper.Extension\obj\Debug\netstandard2.0\CoreSolution.Dapper.Extension.pdb

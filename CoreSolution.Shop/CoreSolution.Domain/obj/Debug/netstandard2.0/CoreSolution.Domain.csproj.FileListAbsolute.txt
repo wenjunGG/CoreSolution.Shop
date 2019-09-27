@@ -1,0 +1,8 @@
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Domain\bin\Debug\netstandard2.0\CoreSolution.Domain.deps.json
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Domain\bin\Debug\netstandard2.0\CoreSolution.Domain.dll
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Domain\bin\Debug\netstandard2.0\CoreSolution.Domain.pdb
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Domain\obj\Debug\netstandard2.0\CoreSolution.Domain.csproj.CoreCompileInputs.cache
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Domain\obj\Debug\netstandard2.0\CoreSolution.Domain.AssemblyInfoInputs.cache
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Domain\obj\Debug\netstandard2.0\CoreSolution.Domain.AssemblyInfo.cs
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Domain\obj\Debug\netstandard2.0\CoreSolution.Domain.dll
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Domain\obj\Debug\netstandard2.0\CoreSolution.Domain.pdb
