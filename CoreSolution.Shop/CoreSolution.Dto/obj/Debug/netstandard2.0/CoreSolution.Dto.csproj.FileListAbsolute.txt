@@ -9,3 +9,4 @@ D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.
 D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Dto\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.dll
 D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Dto\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.xml
 D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Dto\obj\Debug\netstandard2.0\CoreSolution.Dto.csproj.CopyComplete
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Dto\obj\Debug\netstandard2.0\CoreSolution.Dto.csprojAssemblyReference.cache

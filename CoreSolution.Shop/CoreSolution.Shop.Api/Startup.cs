@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
@@ -15,6 +16,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace CoreSolution.Shop.Api
 {
@@ -35,6 +37,27 @@ namespace CoreSolution.Shop.Api
             //var connection = "Data Source=192.168.1.44\\sqlserver;Initial Catalog=SkyJun;Persist Security Info=True;User ID=sa;Password=reload"; //Configuration.GetConnectionString("");
             // services.AddDbContext<EntityFrameworkCore.EfCoreDbContext>(options =>options.UseSqlServer(connection, b => b.MigrationsAssembly("CoreSolution.EntityFrameworkCore"));
             #endregion
+
+
+            #region 配置Swagger
+            services.AddSwaggerGen(i =>
+            {
+                i.SwaggerDoc("v1", new Info
+                {
+                    Version = "v1",
+                    Title = " WebApi接口文档",
+                    Description = "WebApi",
+                    TermsOfService = "None",
+                    Contact = new Contact { Name = "liwenjun", Email = "847055719@qq.com", Url = "http://www.baidu.com" }
+                });
+
+                //Set the comments path for the swagger json and ui. 注释
+                //var basePath = PlatformServices.Default.Application.ApplicationBasePath;
+                //var xmlPath = Path.Combine(basePath, "CoreSolution.PuTuo_WebApi.xml");
+                //i.IncludeXmlComments(xmlPath);
+            });
+            #endregion
+
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
@@ -67,6 +90,18 @@ namespace CoreSolution.Shop.Api
             AutoMapperStartup.Register();//加载AutoMapper配置项
             #endregion
 
+
+         
+
+
+            // Enable middleware to serve generated Swagger as a JSON endpoint.
+            app.UseSwagger();
+            // Enable middleware to serve swagger-ui (HTML, JS, CSS etc.), specifying the Swagger JSON endpoint.
+            app.UseSwaggerUI(i =>
+            {
+                i.SwaggerEndpoint("/swagger/v1/swagger.json", "CoreSolution API V1");
+                i.ShowExtensions();
+            });
 
             app.UseMvc();
         }
