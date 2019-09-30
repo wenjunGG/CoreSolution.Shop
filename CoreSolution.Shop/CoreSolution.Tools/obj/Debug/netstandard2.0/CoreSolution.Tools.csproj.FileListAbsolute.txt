@@ -6,4 +6,3 @@ D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.
 D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Tools\obj\Debug\netstandard2.0\CoreSolution.Tools.AssemblyInfo.cs
 D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Tools\obj\Debug\netstandard2.0\CoreSolution.Tools.dll
 D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Tools\obj\Debug\netstandard2.0\CoreSolution.Tools.pdb
-D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Tools\obj\Debug\netstandard2.0\CoreSolution.Tools.csprojAssemblyReference.cache

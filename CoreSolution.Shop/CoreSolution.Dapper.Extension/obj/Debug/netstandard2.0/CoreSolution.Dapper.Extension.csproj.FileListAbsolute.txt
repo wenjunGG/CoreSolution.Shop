@@ -6,3 +6,4 @@ D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.
 D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Dapper.Extension\bin\Debug\netstandard2.0\CoreSolution.Dapper.Extension.pdb
 D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Dapper.Extension\obj\Debug\netstandard2.0\CoreSolution.Dapper.Extension.dll
 D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Dapper.Extension\obj\Debug\netstandard2.0\CoreSolution.Dapper.Extension.pdb
+D:\liwenjun\自己研发项目\CoreSolution.Shop\CoreSolution.Shop\CoreSolution.Dapper.Extension\obj\Debug\netstandard2.0\CoreSolution.Dapper.Extension.csprojAssemblyReference.cache

@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using CoreSolution.Domain;
+using CoreSolution.Domain.Entity;
 using CoreSolution.Dto.Entity;
 using CoreSolution.IService;
 using DapperCoreRepositoryBase;
@@ -9,7 +10,7 @@ using System.Text;
 
 namespace CoreSolutio.Service
 {
-    public class UserInfoService : MsSqlRepositoryBase<Userinfo_t, UserInfoDto>, IUserInfoService
+    public class UserInfoService : MsSqlRepositoryBase<UserInfo, UserInfoDto>, IUserInfoService
     {
         
     }

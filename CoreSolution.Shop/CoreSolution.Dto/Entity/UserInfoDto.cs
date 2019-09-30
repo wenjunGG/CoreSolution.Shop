@@ -1,23 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace CoreSolution.Dto.Entity
 {
-   public class UserInfoDto
+   public class UserInfoDto:BaseEntityDto
     {
-        /// <summary>
-        /// Id
-        /// </summary>    
-        //[Required]
-        //[Display(Name = "Id")]
-        public Guid Id { get; set; }
-
-        /// <summary>
-        /// UserName
-        /// </summary>    
-        //[StringLength(50)]
-        //[Display(Name = "UserName")]
+        [Required]
+        [Display(Name = "用户名")]
         public string UserName { get; set; }
+
+        [Display(Name = "年龄")]
+        public int UserAge { get; set; }
+
+        [Required]
+        [Display(Name = "用户密码")]
+        public string UserPwd { get; set; }
     }
 }

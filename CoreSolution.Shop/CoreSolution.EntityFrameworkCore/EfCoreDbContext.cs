@@ -1,4 +1,5 @@
 ﻿using CoreSolution.Domain;
+using CoreSolution.Domain.Entity;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -28,8 +29,6 @@ namespace CoreSolution.EntityFrameworkCore
             base.OnModelCreating(modelBuilder);
         }
 
-        private DbSet<Userinfo_t> Userinfo_t { get; set; }
-
-
+        private DbSet<UserInfo> UserInfo { get; set; }
     }
 }

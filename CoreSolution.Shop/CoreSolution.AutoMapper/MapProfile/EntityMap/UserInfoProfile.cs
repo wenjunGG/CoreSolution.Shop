@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using CoreSolution.Domain;
+using CoreSolution.Domain.Entity;
 using CoreSolution.Dto.Entity;
 using System;
 using System.Collections.Generic;
@@ -11,8 +12,8 @@ namespace CoreSolution.AutoMapper.MapProfile.EntityMap
     {
         public UserInfoProfile()
         {
-            CreateMap<UserInfoDto, Userinfo_t>();
-            CreateMap<Userinfo_t, UserInfoDto>();
+            CreateMap<UserInfoDto, UserInfo>();
+            CreateMap<UserInfo, UserInfoDto>();
         }
     }
 }
