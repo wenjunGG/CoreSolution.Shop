@@ -19,7 +19,155 @@ namespace CoreSolution.EntityFrameworkCore.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("CoreSolution.Domain.Entity.Menu", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("ClassName");
+
+                    b.Property<DateTime>("CreateDateTime");
+
+                    b.Property<Guid>("CreateUserId");
+
+                    b.Property<string>("CustomData");
+
+                    b.Property<string>("Icon");
+
+                    b.Property<bool>("IsDelete");
+
+                    b.Property<string>("Name")
+                        .IsRequired();
+
+                    b.Property<Guid?>("ParentId");
+
+                    b.Property<string>("Remark")
+                        .HasMaxLength(2000);
+
+                    b.Property<int>("Sort");
+
+                    b.Property<DateTime?>("UpdateDateTime");
+
+                    b.Property<Guid?>("UpdateUserId");
+
+                    b.Property<string>("Url")
+                        .IsRequired();
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Menu");
+                });
+
+            modelBuilder.Entity("CoreSolution.Domain.Entity.MenuRole", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<DateTime>("CreateDateTime");
+
+                    b.Property<Guid>("CreateUserId");
+
+                    b.Property<bool>("IsDelete");
+
+                    b.Property<Guid>("MenuId");
+
+                    b.Property<string>("Remark")
+                        .HasMaxLength(2000);
+
+                    b.Property<Guid>("RoleId");
+
+                    b.Property<int>("Sort");
+
+                    b.Property<DateTime?>("UpdateDateTime");
+
+                    b.Property<Guid?>("UpdateUserId");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("MenuRole");
+                });
+
+            modelBuilder.Entity("CoreSolution.Domain.Entity.Role", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<DateTime>("CreateDateTime");
+
+                    b.Property<Guid>("CreateUserId");
+
+                    b.Property<string>("Description");
+
+                    b.Property<bool>("IsDelete");
+
+                    b.Property<string>("Name")
+                        .IsRequired();
+
+                    b.Property<string>("Remark")
+                        .HasMaxLength(2000);
+
+                    b.Property<int>("Sort");
+
+                    b.Property<DateTime?>("UpdateDateTime");
+
+                    b.Property<Guid?>("UpdateUserId");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Role");
+                });
+
             modelBuilder.Entity("CoreSolution.Domain.Entity.UserInfo", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("Age");
+
+                    b.Property<DateTime>("CreateDateTime");
+
+                    b.Property<Guid>("CreateUserId");
+
+                    b.Property<string>("Email");
+
+                    b.Property<bool>("IsDelete");
+
+                    b.Property<bool>("IsEmailConfirmed");
+
+                    b.Property<bool>("IsPhoneNumConfirmed");
+
+                    b.Property<string>("Password")
+                        .IsRequired();
+
+                    b.Property<string>("PhoneNum")
+                        .IsRequired();
+
+                    b.Property<string>("Picture");
+
+                    b.Property<string>("RealName");
+
+                    b.Property<string>("Remark")
+                        .HasMaxLength(2000);
+
+                    b.Property<bool>("Sex");
+
+                    b.Property<int>("Sort");
+
+                    b.Property<DateTime?>("UpdateDateTime");
+
+                    b.Property<Guid?>("UpdateUserId");
+
+                    b.Property<string>("UserName")
+                        .IsRequired();
+
+                    b.Property<int>("UserType");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("UserInfo");
+                });
+
+            modelBuilder.Entity("CoreSolution.Domain.Entity.UserRole", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
@@ -33,23 +181,19 @@ namespace CoreSolution.EntityFrameworkCore.Migrations
                     b.Property<string>("Remark")
                         .HasMaxLength(2000);
 
+                    b.Property<Guid>("RoleId");
+
                     b.Property<int>("Sort");
 
                     b.Property<DateTime?>("UpdateDateTime");
 
                     b.Property<Guid?>("UpdateUserId");
 
-                    b.Property<int>("UserAge");
-
-                    b.Property<string>("UserName")
-                        .IsRequired();
-
-                    b.Property<string>("UserPwd")
-                        .IsRequired();
+                    b.Property<Guid>("UserId");
 
                     b.HasKey("Id");
 
-                    b.ToTable("UserInfo");
+                    b.ToTable("UserRole");
                 });
 #pragma warning restore 612, 618
         }

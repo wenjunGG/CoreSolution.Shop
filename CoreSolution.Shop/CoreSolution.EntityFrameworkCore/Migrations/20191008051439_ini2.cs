@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace CoreSolution.EntityFrameworkCore.Migrations
 {
-    public partial class ini1 : Migration
+    public partial class ini2 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -20,8 +20,16 @@ namespace CoreSolution.EntityFrameworkCore.Migrations
                     Sort = table.Column<int>(nullable: false),
                     Remark = table.Column<string>(maxLength: 2000, nullable: true),
                     UserName = table.Column<string>(nullable: false),
-                    UserAge = table.Column<int>(nullable: false),
-                    UserPwd = table.Column<string>(nullable: false)
+                    RealName = table.Column<string>(nullable: true),
+                    Email = table.Column<string>(nullable: true),
+                    IsEmailConfirmed = table.Column<bool>(nullable: false),
+                    PhoneNum = table.Column<string>(nullable: false),
+                    IsPhoneNumConfirmed = table.Column<bool>(nullable: false),
+                    Password = table.Column<string>(nullable: false),
+                    UserType = table.Column<int>(nullable: false),
+                    Sex = table.Column<bool>(nullable: false),
+                    Picture = table.Column<string>(nullable: true),
+                    Age = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {

@@ -28,7 +28,13 @@ namespace CoreSolution.EntityFrameworkCore
         {
             base.OnModelCreating(modelBuilder);
         }
-
+        #region 基础表
         private DbSet<UserInfo> UserInfo { get; set; }
+        private DbSet<Menu> Menu { get; set; }
+
+        private DbSet<MenuRole> MenuRole { get; set; }
+        private DbSet<Role> Role { get; set; }
+        private DbSet<UserRole> UserRole { get; set; }
+        #endregion
     }
 }

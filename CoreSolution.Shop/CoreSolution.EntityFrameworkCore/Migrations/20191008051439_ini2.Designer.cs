@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CoreSolution.EntityFrameworkCore.Migrations
 {
     [DbContext(typeof(EfCoreDbContext))]
-    [Migration("20190929070735_ini1")]
-    partial class ini1
+    [Migration("20191008051439_ini2")]
+    partial class ini2
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -26,14 +26,34 @@ namespace CoreSolution.EntityFrameworkCore.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<int>("Age");
+
                     b.Property<DateTime>("CreateDateTime");
 
                     b.Property<Guid>("CreateUserId");
 
+                    b.Property<string>("Email");
+
                     b.Property<bool>("IsDelete");
+
+                    b.Property<bool>("IsEmailConfirmed");
+
+                    b.Property<bool>("IsPhoneNumConfirmed");
+
+                    b.Property<string>("Password")
+                        .IsRequired();
+
+                    b.Property<string>("PhoneNum")
+                        .IsRequired();
+
+                    b.Property<string>("Picture");
+
+                    b.Property<string>("RealName");
 
                     b.Property<string>("Remark")
                         .HasMaxLength(2000);
+
+                    b.Property<bool>("Sex");
 
                     b.Property<int>("Sort");
 
@@ -41,13 +61,10 @@ namespace CoreSolution.EntityFrameworkCore.Migrations
 
                     b.Property<Guid?>("UpdateUserId");
 
-                    b.Property<int>("UserAge");
-
                     b.Property<string>("UserName")
                         .IsRequired();
 
-                    b.Property<string>("UserPwd")
-                        .IsRequired();
+                    b.Property<int>("UserType");
 
                     b.HasKey("Id");
 

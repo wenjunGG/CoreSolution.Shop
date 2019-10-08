@@ -171,7 +171,7 @@ namespace CoreSolution.Tools.Extensions
             {
                 return false;
             }
-            return Regex.IsMatch(str.Trim(), @"^[+-]?/d*[.]?/d*$");
+            return Regex.IsMatch(str.Trim(), @"^[0-9]*$");
         }
 
 

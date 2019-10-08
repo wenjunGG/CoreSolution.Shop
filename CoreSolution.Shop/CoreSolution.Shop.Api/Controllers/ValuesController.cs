@@ -14,7 +14,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CoreSolution.Shop.Api.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/Values")]
     [ApiController]
     public class ValuesController : ControllerBase
     {
@@ -31,12 +31,10 @@ namespace CoreSolution.Shop.Api.Controllers
         /// 测试
         /// </summary>
         /// <returns></returns>
+        [Route("Get")]
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-
-
-
             #region 插入
             //UserInfo user = new UserInfo() { UserName = "liwenjun", UserPwd = "123456", UserAge = 12 };
             // _IUserInfoService.insert(user);
@@ -57,13 +55,13 @@ namespace CoreSolution.Shop.Api.Controllers
 
             #region 列表
             int outTotal = 0;
-            var ListTotal = _IUserInfoService.GetEntityDtoList(t => t.IsDelete == false, t => t.CreateDateTime, t => new UserInfoDto { Id = t.Id, UserName = t.UserName, UserAge = t.UserAge, UserPwd = t.UserPwd },out outTotal);
+            var ListTotal = _IUserInfoService.GetEntityDtoList(t => t.IsDelete == false, t => t.CreateDateTime, t => new UserInfoDto { Id = t.Id, UserName = t.UserName,  Age = t.Age, Password = t.Password },out outTotal);
 
-            var List= _IUserInfoService.GetEntityDtoList(t => t.IsDelete == false, t => t.CreateDateTime, t => new UserInfoDto { Id = t.Id, UserName = t.UserName, UserAge = t.UserAge, UserPwd = t.UserPwd });
+            var List= _IUserInfoService.GetEntityDtoList(t => t.IsDelete == false, t => t.CreateDateTime, t => new UserInfoDto { Id = t.Id, UserName = t.UserName, Age = t.Age, Password = t.Password });
             #endregion
 
             #region 更新
-            UserExpressionDto.UserPwd = "li_ooo";
+            UserExpressionDto.Password = "li_ooo";
             _IUserInfoService.Update(UserExpressionDto);
 
             #endregion
@@ -82,5 +80,32 @@ namespace CoreSolution.Shop.Api.Controllers
 
         }
 
-    }
+        /// <summary>
+        /// 测试
+        /// </summary>
+        /// <returns></returns>
+        [Route("AddAdmin")]
+        [HttpGet]
+        public ActionResult<string> AddAdmin()
+        {
+            UserInfoDto user = new UserInfoDto()
+            {
+                UserName = "shop_admin",
+                Password = "e10adc3949ba59abbe56e057f20f883e",
+                Age = 30,
+                Email = "847055719@qq.com",
+                IsEmailConfirmed = true,
+                PhoneNum = "18217312775",
+                IsPhoneNumConfirmed = true,
+                RealName = "lwj",
+                Remark = "管理员",
+                Sex = true,
+                UserType = Dto.Eum.UserType.GeneralUser
+            };
+
+            _IUserInfoService.insert(user);
+            
+            return "添加管理员用户成功";
+        }
+      }
 }
