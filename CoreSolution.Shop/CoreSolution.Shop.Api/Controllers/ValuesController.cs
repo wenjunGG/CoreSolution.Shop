@@ -19,10 +19,12 @@ namespace CoreSolution.Shop.Api.Controllers
     public class ValuesController : ControllerBase
     {
         private readonly IUserInfoService _IUserInfoService;
+        private readonly IMenuService _IMenuService;
 
-        public ValuesController(IUserInfoService IUserInfoService)
+        public ValuesController(IUserInfoService IUserInfoService, IMenuService IMenuService)
         {
             _IUserInfoService = IUserInfoService;
+            _IMenuService = IMenuService;
         }
 
 
@@ -43,21 +45,21 @@ namespace CoreSolution.Shop.Api.Controllers
             #region  获取单个实体
 
             //根据ID获取
-            var UserDto =_IUserInfoService.GetEntityDto(Guid.Parse("24D29F59-080D-49B4-BB1C-EC7467C2B01F"));
+            var UserDto = _IUserInfoService.GetEntityDto(Guid.Parse("24D29F59-080D-49B4-BB1C-EC7467C2B01F"));
 
             //根据Expression获取
             //不支持下面写法
             //var UserExpressionDto = _IUserInfoService.GetEntityDto(t=>t.Id== Guid.Parse("24D29F59-080D-49B4-BB1C-EC7467C2B01F"));
             Guid id = Guid.Parse("34D29F59-080D-49B4-BB1C-EC7467C2B01F");
-            var UserExpressionDto = _IUserInfoService.GetEntityDto(t=>t.Id== id);
+            var UserExpressionDto = _IUserInfoService.GetEntityDto(t => t.Id == id);
             #endregion
 
 
             #region 列表
             int outTotal = 0;
-            var ListTotal = _IUserInfoService.GetEntityDtoList(t => t.IsDelete == false, t => t.CreateDateTime, t => new UserInfoDto { Id = t.Id, UserName = t.UserName,  Age = t.Age, Password = t.Password },out outTotal);
+            var ListTotal = _IUserInfoService.GetEntityDtoList(t => t.IsDelete == false, t => t.CreateDateTime, t => new UserInfoDto { Id = t.Id, UserName = t.UserName, Age = t.Age, Password = t.Password }, out outTotal);
 
-            var List= _IUserInfoService.GetEntityDtoList(t => t.IsDelete == false, t => t.CreateDateTime, t => new UserInfoDto { Id = t.Id, UserName = t.UserName, Age = t.Age, Password = t.Password });
+            var List = _IUserInfoService.GetEntityDtoList(t => t.IsDelete == false, t => t.CreateDateTime, t => new UserInfoDto { Id = t.Id, UserName = t.UserName, Age = t.Age, Password = t.Password });
             #endregion
 
             #region 更新
@@ -81,7 +83,7 @@ namespace CoreSolution.Shop.Api.Controllers
         }
 
         /// <summary>
-        /// 测试
+        /// 测试 添加管理员
         /// </summary>
         /// <returns></returns>
         [Route("AddAdmin")]
@@ -104,8 +106,42 @@ namespace CoreSolution.Shop.Api.Controllers
             };
 
             _IUserInfoService.insert(user);
-            
+
             return "添加管理员用户成功";
         }
-      }
+
+        /// <summary>
+        /// 测试添加菜单
+        /// </summary>
+        /// <returns></returns>
+        [Route("AddMenu")]
+        [HttpGet]
+        public ActionResult<string> AddMenu()
+        {
+            MenuDto menu = new MenuDto()
+            {
+                Name = "设置",
+                Url = "www.baidu.com"
+            };
+            _IMenuService.insert(menu);
+            
+            MenuDto menu_user = new MenuDto()
+            {
+                Name = "用户列表",
+                Url = "www.baidu.com",
+                ParentId= menu.Id
+            };
+            _IMenuService.insert(menu_user);
+
+            MenuDto menu_Role = new MenuDto()
+            {
+                Name = "角色列表",
+                Url = "www.baidu.com",
+                ParentId=menu.Id
+            };
+            _IMenuService.insert(menu_Role);
+
+            return "添加菜单成功";
+        }
+    }
 }

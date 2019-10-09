@@ -39,6 +39,29 @@ namespace CoreSolution.Shop.Api
             #endregion
 
 
+            //配置跨域处理
+            //string[] urls = Configuration.GetSection("AllowCors:AllowOrigins").Value.Split(",");
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAllOrigin", i =>
+                {
+                    //i.WithOrigins("")//允许指定主机列表访问
+                    i.AllowAnyOrigin()
+                    .AllowAnyHeader()
+                    .AllowAnyMethod()
+                    .AllowCredentials()//允许处理cookie
+                    .SetPreflightMaxAge(TimeSpan.FromMilliseconds(100000));//设置预检请求(OPTIONS)缓存时间
+                });
+                //options.AddPolicy("AllowOrigins", i =>
+                //{
+                //    i.WithOrigins(urls)
+                //    .AllowAnyHeader()
+                //    .AllowAnyMethod()
+                //    .AllowCredentials();
+                //});
+            });
+
+
             #region 配置Swagger
             services.AddSwaggerGen(i =>
             {
@@ -91,8 +114,9 @@ namespace CoreSolution.Shop.Api
             #endregion
 
 
-         
 
+            //使用跨域
+            app.UseCors("AllowAllOrigin");
 
             // Enable middleware to serve generated Swagger as a JSON endpoint.
             app.UseSwagger();

@@ -68,7 +68,7 @@ namespace DapperCoreRepositoryBase
                 .Select(Selector).PageList(PageIndex,PageSize);
 
             Total = updateResult6.Total;
-            return (List<TEntityDto>)(updateResult6.Items);
+            return Mapper.Map<List<TEntityDto>>(updateResult6.Items);
         }
 
         /// <summary>
@@ -80,11 +80,11 @@ namespace DapperCoreRepositoryBase
         /// <returns></returns>
         public List<TEntityDto> GetEntityDtoList<TProperty>(Expression<Func<TEntity, bool>> where, Expression<Func<TEntity, TProperty>> Order, Expression<Func<TEntity, TEntityDto>> Selector)
         {
-            var updateResult6 = base.QuerySet<TEntity>().Where(where)
+            var updateResult6 = Mapper.Map<List<TEntityDto>>(base.QuerySet<TEntity>().Where(where)
              .OrderBy(Order)
-             .Select(Selector).ToList();
+             .Select(Selector).ToList());
             
-            return (List<TEntityDto>)(updateResult6);
+            return updateResult6;
         }
 
         /// <summary>
@@ -95,10 +95,10 @@ namespace DapperCoreRepositoryBase
         /// <returns></returns>
         public List<TEntityDto> GetEntityDtoList<TProperty>(Expression<Func<TEntity, bool>> where, Expression<Func<TEntity, TProperty>> Order)
         {
-            var updateResult6 = base.QuerySet<TEntity>().Where(where)
-             .OrderBy(Order).ToList();
+            var updateResult6 = Mapper.Map<List<TEntityDto>>(base.QuerySet<TEntity>().Where(where)
+             .OrderBy(Order).ToList());
 
-            return (List<TEntityDto>)(updateResult6);
+            return updateResult6;
         }
 
         /// <summary>
@@ -108,9 +108,9 @@ namespace DapperCoreRepositoryBase
         /// <returns></returns>
         public List<TEntityDto> GetEntityDtoList(Expression<Func<TEntity, bool>> where)
         {
-            var updateResult6 = base.QuerySet<TEntity>().Where(where).ToList();
+            var updateResult6 = Mapper.Map<List<TEntityDto>>(base.QuerySet<TEntity>().Where(where).ToList());
 
-            return (List<TEntityDto>)(updateResult6);
+            return updateResult6;
         }
 
         /// <summary>
@@ -119,8 +119,8 @@ namespace DapperCoreRepositoryBase
         /// <returns></returns>
         public List<TEntityDto> GetEntityDtoList()
         {
-            var updateResult6 = base.QuerySet<TEntity>().ToList();
-            return (List<TEntityDto>)(updateResult6);
+            var updateResult6 =Mapper.Map<List<TEntityDto>>(base.QuerySet<TEntity>().ToList());
+            return updateResult6;
         }
         #endregion
 

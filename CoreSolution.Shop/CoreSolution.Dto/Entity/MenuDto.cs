@@ -30,4 +30,17 @@ namespace CoreSolution.Dto.Entity
         [Display(Name = "上级菜单Id")]
         public Guid? ParentId { get; set; }
     }
+
+    /// <summary>
+    /// 菜单有序列表展示
+    /// </summary>
+    public class MenuDtoView: MenuDto
+    {
+        public MenuDtoView()
+        {
+            this.ListMenuDto = new List<MenuDtoView>();
+        }
+        public List<MenuDtoView> ListMenuDto { get; set; }
+    }
+
 }
