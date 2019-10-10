@@ -20,11 +20,18 @@ namespace CoreSolution.Shop.Api.Controllers
     {
         private readonly IUserInfoService _IUserInfoService;
         private readonly IMenuService _IMenuService;
+        private readonly IRoleService _IRoleService;
+        private readonly IUserRoleService _IUserRoleService;
+        private readonly IMenuRoleService _IMenuRoleService;
 
-        public ValuesController(IUserInfoService IUserInfoService, IMenuService IMenuService)
+        public ValuesController(IUserInfoService IUserInfoService, IMenuService IMenuService, IRoleService IRoleService, 
+            IUserRoleService IUserRoleService, IMenuRoleService IMenuRoleService)
         {
             _IUserInfoService = IUserInfoService;
             _IMenuService = IMenuService;
+            _IRoleService = IRoleService;
+            _IUserRoleService = IUserRoleService;
+            _IMenuRoleService = IMenuRoleService;
         }
 
 
@@ -111,6 +118,25 @@ namespace CoreSolution.Shop.Api.Controllers
         }
 
         /// <summary>
+        /// 测试角色
+        /// </summary>
+        /// <returns></returns>
+        [Route("AddRole")]
+        [HttpGet]
+        public ActionResult<string> AddRole()
+        {
+            RoleDto role = new RoleDto()
+            {
+                 Name="超级管理员",
+                 Description="超级管理员角色"
+            };
+
+            _IRoleService.insert(role);
+            return "添加角色成功";
+        }
+
+
+        /// <summary>
         /// 测试添加菜单
         /// </summary>
         /// <returns></returns>
@@ -143,5 +169,8 @@ namespace CoreSolution.Shop.Api.Controllers
 
             return "添加菜单成功";
         }
+
+
+       
     }
 }

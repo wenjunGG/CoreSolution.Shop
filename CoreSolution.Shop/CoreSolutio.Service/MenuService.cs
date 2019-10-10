@@ -12,12 +12,16 @@ namespace CoreSolution.Service
 {
     public class MenuService : MsSqlRepositoryBase<Menu, MenuDto>, IMenuService
     {
-        public List<MenuDtoView> GetMenuList()
+        /// <summary>
+        /// 获取相关菜单集合
+        /// </summary>
+        /// <param name="ListMenuId"></param>
+        /// <returns></returns>
+        public List<MenuDtoView> GetMenuList(List<Guid> ListMenuId)
         {
-            var result = base.GetEntityDtoList();
+            var result = base.GetEntityDtoList(t=> ListMenuId.Contains(t.Id));
             List<MenuDtoView> ListMenu = new List<MenuDtoView>();
-
-
+            
             //获取一级目录
             var firstResult = result.Where(t => !t.ParentId.HasValue).OrderBy(t => t.Sort).ToList();
             //去掉一级目录的数据

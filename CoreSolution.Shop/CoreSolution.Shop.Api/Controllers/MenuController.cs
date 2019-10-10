@@ -45,10 +45,23 @@ namespace CoreSolution.Shop.Api.Controllers
         [Route("GetMenuInfoList")]
         public JsonResult GetMenuInfoList()
         {
-            var ListMenu=_IMenuService.GetMenuList();
+            var ListMenu=_IMenuService.GetMenuList(new List<Guid>());
             return AjaxHelper.JsonResult(HttpStatusCode.OK, "成功", ListMenu);
         }
 
-     
+        /// <summary>
+        /// 获取当前用户的菜单
+        /// </summary>
+        /// <param name="Token">Token</param>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("GetCurrentMenu")]
+        public JsonResult GetCurrentMenu(string Token)
+        {
+            return AjaxHelper.JsonResult(HttpStatusCode.OK, "成功");
+        }
+
+
+
     }
 }

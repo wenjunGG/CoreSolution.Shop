@@ -24,9 +24,17 @@ namespace CoreSolution.Shop.Api.Controllers
     {
 
         private readonly IUserInfoService _IUserInfoService;
-        public UseInfoController(IUserInfoService iUserInfoService)
+        private readonly IUserRoleService _UserRoleService;
+        private readonly IMenuRoleService _IMenuRoleService;
+        private readonly IMenuService _IMenuService;
+
+        public UseInfoController(IUserInfoService iUserInfoService, IUserRoleService IUserRoleService, IMenuRoleService IMenuRoleService,
+            IMenuService IMenuService)
         {
             _IUserInfoService = iUserInfoService;
+            _UserRoleService = IUserRoleService;
+            _IMenuRoleService = IMenuRoleService;
+            _IMenuService = IMenuService;
         }
 
         // GET: api/UseInfo
@@ -107,15 +115,16 @@ namespace CoreSolution.Shop.Api.Controllers
                 string token = Guid.NewGuid().ToString();
                 await LoginManager.LoginAsync(token, user.Id);
 
+
+                //获取用户菜单权限
+                var RoleIdList=_UserRoleService.GetEntityDtoList(t => t.UserId == user.Id).Select(t => t.RoleId).Distinct().ToList();
+                var MenuIdList=_IMenuRoleService.GetEntityDtoList(t => RoleIdList.Contains(t.RoleId)).Select(t => t.MenuId).Distinct().ToList();
+                var MenuList=_IMenuService.GetMenuList(MenuIdList);
+
                 var userInfo = new
                 {
                     token= token,
-                    userName=user.UserName,
-                    realName=user.RealName,
-                    userType = user.UserType,
-                    Sex = user.Sex,
-                    Picture = user.Picture,
-                    PhoneNum = user.PhoneNum,
+                    MenuList= MenuList
                 };
 
                 return AjaxHelper.JsonResult(HttpStatusCode.OK, "登陆成功", userInfo);
